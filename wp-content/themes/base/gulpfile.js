@@ -49,7 +49,7 @@ const
     browserSync.init({
       open:true,
       injectChanges: true,
-      proxy: 'http://localhost/main-template'
+      proxy: 'http://localhost/wordpress-template'
     });
   });
 
