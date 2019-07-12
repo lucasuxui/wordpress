@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/*
+    Theme Name: Ourmind - Template
+    Theme URI: http://ourmind.com
+    Author: Ourmind
+    Author URI: http://ourmind.com
+    Description: Um tema de desenvolvedores radicais!
+    Version: 0.1 alpha
+    License: Ourmind 2018 Copyright Terms
+    License URI: http://ourmind.com
+    Tags: Responsive, Grid, Flex, Bootstrap 4, Custom Template,Gulp
+*/
+/**
+
+** GLOBAL
+    -- animate
+    -- fonts
+    -- variables
+
+** MODULES
+
+
+** SECTIONS
+	-- header
+	-- footer
+	-- inner content
+
+
+**/
+
+// **
+// GLOBAL
+// **
+@import "global/animate";
+@import "global/variables";
+@import "global/fonts";
+
+// **
+// MODULES
+// **
+@import "modules/bootstrap";
+// **
+// SECTIONS
+// **
+@import "sections/header";
+@import "sections/footer";
+@import "sections/inner-content";
+
+header{
+    transition: all 250ms ease;
+    background-color: $primaryColor; 
+    color: $white;    
+}
+body{
+    .container{
+    background-color: $gray;
+    padding: 1rem;
+        h1{
+            text-align: center;
+            color: $primaryColor;
+            font-family: $ft2;
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    }
+}
