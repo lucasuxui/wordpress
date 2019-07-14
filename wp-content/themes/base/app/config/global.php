@@ -1,7 +1,44 @@
 <?php
 //Carregando Style/Js
-wp_enqueue_script("main",   WP_SCRIPTS . "./main.min.js", array('jquery'), "1.0", true);
-wp_enqueue_style( 'style',  WP_STYLES . './style.min.css',false,'1.1','all');
+function add_theme(){
+	wp_enqueue_script("main",   WP_SCRIPTS . "./main.min.js", array('jquery'), "1.0", true);
+	wp_enqueue_style( 'style',  WP_STYLES . './style.min.css',false,'1.1','all');
+}
+add_action('wp_enqueue_scripts', 'add_theme');
+
+function theme_functions()
+{
+    /**
+     * Título do Documento
+     */
+    add_theme_support('title-tag');
+
+    /**
+     * Miniaturas
+     */
+    add_theme_support('post-thumbnails');
+
+    /**
+     * Menus
+     */
+		 register_nav_menus( array(
+		 	'primary' => __( 'Menu da Template', 'Base' ),
+		 ) );
+
+    /**
+     * Formato de Posts
+     */
+    add_theme_support('post-formats', array(
+        'sidebar',
+    ));
+
+    /**
+     * Adiciona Crops de Imagens
+     */
+    add_image_size('nome-do-tamanho','width','height', true);
+}
+
+add_action('after_setup_theme', 'theme_functions');
 
 if( function_exists('acf_add_options_page') ) {
 

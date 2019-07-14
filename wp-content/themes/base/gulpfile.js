@@ -10,7 +10,7 @@ const
     styleDIST     = './dist/css/',
     styleWatch    = 'assets/scss/**/*.scss',
 
-    //JavaScripts Directories
+    //Main JavaScripty Directory
     jsSRC         = 'main.js',
     jsFolder      = 'assets/js/',
     jsDIST        = './dist/js/',

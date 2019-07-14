@@ -1,5 +1,16 @@
-<?php get_header() ?>
-    
-    <h5>Chame esta página quando tiver vários padrões iguais de paginas.</h5>
-   
-<?php get_footer() ?>
+<?php get_header();?>
+
+<?php while (have_posts()) : the_post();  ?>
+  <?php
+  $post_type = get_post_type( get_the_ID() );
+  echo $post_type;
+  ?>
+    <?php if(is_single($post_type)) : ?>
+        <?php get_template_part("template-parts/component", $post_type)?>
+    <?php else :
+       get_template_part('404.php');
+    endif;
+    ?>
+<?php endwhile; ?>
+
+<?php get_footer();?>

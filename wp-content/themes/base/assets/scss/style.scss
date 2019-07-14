@@ -38,30 +38,10 @@
 // **
 // MODULES
 // **
-@import "modules/bootstrap";
+@import "modules/imported";
 // **
 // SECTIONS
 // **
 @import "sections/header";
 @import "sections/footer";
 @import "sections/inner-content";
-
-header{
-    transition: all 250ms ease;
-    background-color: $primaryColor; 
-    color: $white;    
-}
-body{
-    .container{
-    background-color: $gray;
-    padding: 1rem;
-        h1{
-            text-align: center;
-            color: $primaryColor;
-            font-family: $ft2;
-            font-weight: 700;
-            font-size: 18px;
-            text-transform: uppercase;
-        }
-    }
-}

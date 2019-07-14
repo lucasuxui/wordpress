@@ -1,17 +1,15 @@
 <?php get_header();?>
-
-    <h1>Page.php substitui a front-page aqui.</h1>
-    <p>Exemplos: Sobre,Contato...</p>
-
-     <?php 
-        //Pesquisa por slug
-          $pgSearch = new WP_Query('pagename=sobre');
-          while ( $pgSearch -> have_posts() ) : $pgSearch-> the_post(); //Procura a página 'sobre'
+<div class="container">
+<?php if (have_posts()) : the_post();  ?>
+  <?php
+  $slug = basename(get_permalink());
+  ?>
+    <?php if(is_page($slug)) : ?>
+        <?php get_template_part("template-parts/component", $slug)?>
+    <?php else :
+       get_template_part('404.php');
+    endif;
     ?>
-    
-    <h2><?php the_title(); ?></h2>
-    <p><?php the_content();?></p>
-
-    <?php endwhile; ?>
-
+<?php endif; ?>
+</div>
 <?php get_footer();?>

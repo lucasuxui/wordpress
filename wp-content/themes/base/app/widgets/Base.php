@@ -36,11 +36,14 @@ class Base extends WP_Widget
         extract($args);
 
         ?>
-        <!-- Your Html -->
+        <!-- Widget -->
         <section>
-          Aqui está seu widget
+          <div class="alert alert-success" role="alert">
+            Aqui está seu <b>widget</b>! Lembre-se de ativar os plugins!!
+            <i class="fab fa-font-awesome"></i>
+          </div>
         </section>
-        <!--/ Your Html -->
+        <!--/ Widget -->
         <?php
     }
 

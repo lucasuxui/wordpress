@@ -1,8 +1,8 @@
 //Main Js File (Jquery)
 jQuery(document).ready(function ($) {
 
-  $('.container h1').click(function(){
-    $(this).css('color','red');
+  $('.btn-primary').click(function(){
+    $(this).css('background-color','teal');
   });
-  
+
 });

@@ -20,8 +20,9 @@ if (!defined('WP_IMAGES')) {
     define('WP_IMAGES', WP_DIRECTORY . '/dist/images');
 }
 
+
 //Auto Load app
-$directories = array('app/components','app/config', 'app/widgets', 'app/poststypes');
+$directories = array('template-parts','app/config', 'app/widgets', 'app/poststypes');
 $types = array( 'php' );
 
 foreach ($directories as $directory){
@@ -48,4 +49,11 @@ foreach ($directories as $directory){
 
 }
 
+if ( ! file_exists( WP_HOME . 'app/class-wp-bootstrap-navwalker.php' ) ) {
+	// file does not exist... return an error.
+	return new WP_Error( 'class-wp-bootstrap-navwalker-missing', __( 'It appears the class-wp-bootstrap-navwalker.php file may be missing.', 'wp-bootstrap-navwalker' ) );
+} else {
+	// file exists... require it.
+	require_once WP_HOME . 'app/class-wp-bootstrap-navwalker.php';
+}
 ?>
