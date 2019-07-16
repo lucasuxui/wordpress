@@ -25,7 +25,7 @@ Apague o .git de sua pasta raiz do wp, pois agora você iniciará seus projetos 
 
 ### Installing
 
-Com o Node.js instale os requisitos para o compilamento futuro.(Na pasta dos temas do WordPress "*TEMA*/gulp/")
+Com o Node.js instale os requisitos para o compilamento futuro.(Na pasta dos temas do WordPress "**TEMA**/gulp/")
 
 ```
 npm install
@@ -60,17 +60,17 @@ Obs: Pode renomear se quiser.
 
 Seja feliz e curta esta template.
 
-## Built With
+## Dependências
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [WordPress](https://br.wordpress.com/) - The web framework used
+* [Gulp.js](https://gulpjs.com/) - Source Management
+* [Node.js](https://nodejs.org) - Package Manager
 
 ## Authors
 
-* **Lucas Oliveira** - *Initial work* - [Lucasyem](https://gitlab.com/lucasyem)
+* **Lucas Oliveira** - *Project's* - [Lucasyem](https://gitlab.com/lucasyem)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+Veja as últimas atualizações [contributors](https://gitlab.com/lucasyem/wordpress-template/activity).
 
 ## License
 
@@ -78,6 +78,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Web Development
-* PHP
-* SCSS
+* WordPress
+* Gulp
+* Node
