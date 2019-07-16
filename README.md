@@ -14,7 +14,7 @@ Com HTTPS:
 ```
 https://gitlab.com/lucasyem/wordpress-template.git
 ```
-Com SSH:
+Ou Com SSH:
 ```
 git@gitlab.com:lucasyem/wordpress-template.git
 ```
@@ -25,7 +25,7 @@ Apague o .git de sua pasta raiz do wp, pois agora você iniciará seus projetos 
 
 ### Installing
 
-Com o Node.js instale os requisitos para o compilamento futuro.(Na pasta "gulp")
+Com o Node.js instale os requisitos para o compilamento futuro.(Na pasta dos temas do WordPress "*TEMA*/gulp/")
 
 ```
 npm install
