@@ -32,7 +32,7 @@ function teste()
         'labels' => $labels,
         'supports' => array('title', 'thumbnail','editor'),
         'taxonomies' => array(),
-        'hierarchical' => false,
+        'hierarchical' => true,
         'public' => true,
         'show_ui' => true,
         'show_in_menu' => true,

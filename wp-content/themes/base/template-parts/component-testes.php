@@ -2,12 +2,20 @@
   $args = array(
   'post_type' => 'teste',
   );
-  query_posts($args); 
+if(is_page()):
+  $inner_query = new WP_Query($args);
 ?>
-  <div class="card">
-    <h1><?php echo the_title(); ?></h1>
-    <?php if(have_posts()): while(have_posts()): the_post(); ?>
-        <a href="<?php the_permalink(); ?>" title="<?php echo the_title(); ?>"><?php echo the_title(); ?></a>
+  <div class="container">
+    <h1>
+      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+    </h1>
+    <?php if($inner_query->have_posts()): while($inner_query->have_posts()): $inner_query->the_post(); ?>
+        <div class="card">
+          <a href="<?php the_permalink(); ?>" title="<?php echo the_title(); ?>" ><?php the_title(); ?></a>
+          <article>
+            <?php the_content(); ?>
+          </article>
+        </div>
     <?php endwhile; endif;?>
   </div>
-<?php  wp_reset_query();?>
+<?php endif; ?>
