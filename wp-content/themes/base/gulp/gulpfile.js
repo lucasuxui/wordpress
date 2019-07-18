@@ -82,5 +82,5 @@ exports.javascript = javascript;
 exports.watch = watch;
 exports.imgmin = imgmin;
 
-var build = gulp.parallel(watch);
+var build = gulp.parallel(watch, javascript, css, imgmin);
 gulp.task('default', build);
