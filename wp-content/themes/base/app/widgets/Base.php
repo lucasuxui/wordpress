@@ -12,10 +12,10 @@ class Base extends WP_Widget
     {
 
         parent::__construct(
-            'about',
+            'template',
             'Widget Modelo (Home)',
             array(
-                'classname' => 'about',
+                'classname' => 'template',
                 'description' => 'Mini apresentação da empresa.'
             )
         );
@@ -37,9 +37,9 @@ class Base extends WP_Widget
 
         ?>
         <!-- Widget -->
-        <section>
+        <section class="template">
           <div class="alert alert-success" role="alert">
-            Aqui está seu <b>widget</b>! Lembre-se de ativar os plugins!!
+            Aqui está seu <b>widget</b>!
             <i class="fab fa-font-awesome"></i>
           </div>
         </section>

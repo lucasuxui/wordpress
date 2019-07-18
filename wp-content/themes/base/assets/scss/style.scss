@@ -1,17 +1,17 @@
 @charset "UTF-8";
 /*
-    Theme Name: Ourmind - Template
-    Theme URI: http://ourmind.com
-    Author: Ourmind
-    Author URI: http://ourmind.com
-    Description: Um tema de desenvolvedores radicais!
+    Theme Name: Template Base
+    Theme URI: http://lucas.souza@tutanodigital.com.br
+    Author: @lucasyem
+    Author URI: http://lucas.souza@tutanodigital.com.br
+    Description: Um tema para desenvolvedores radicais!
     Version: 0.1 alpha
-    License: Ourmind 2018 Copyright Terms
-    License URI: http://ourmind.com
-    Tags: Responsive, Grid, Flex, Bootstrap 4, Custom Template,Gulp
+    License: lucasyem 2019 Copyright Terms
+    License URI: http://lucas.souza@tutanodigital.com.br
+    Tags: Responsive, Grid, Flex, Bootstrap 4, Custom Template
 */
 /**
- 
+
 ** GLOBAL
     -- animate
     -- fonts
@@ -25,6 +25,11 @@
 	-- footer
 	-- inner content
 
+** TEMPLATE
+	-- breadcrumbs
+  -- navbar
+	-- navwalker
+	-- pagination
 
 **/
 
@@ -34,7 +39,6 @@
 @import "global/animate";
 @import "global/variables";
 @import "global/fonts";
-
 // **
 // MODULES
 // **
@@ -45,3 +49,10 @@
 @import "sections/header";
 @import "sections/footer";
 @import "sections/inner-content";
+// **
+// TEMPLATE
+// **
+@import "template/breadcrumbs";
+@import "template/navbar";
+@import "template/navwalker";
+@import "template/pagination";

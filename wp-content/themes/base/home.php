@@ -2,7 +2,7 @@
 
 <div class="container">
 
-    <div class="jumbotron">
+    <div class="jumbotron my-3">
       <h1 class="display-4">Olá sou index.php. Sou a home.</h1>
       <p class="lead">Este tema possui Bootstrap 4.1.3 e Font Awesome 5.9</p>
       <hr class="my-4">

@@ -33,15 +33,15 @@ function bootstrap_pagination( \WP_Query $wp_query = null, $echo = true ) {
 			'end_size'     => 3,
 			'mid_size'     => 1,
 			'prev_next'    => true,
-			'prev_text'    => __( '« Prev' ),
-			'next_text'    => __( 'Next »' ),
+			'prev_text'    => __( '« Anterior' ),
+			'next_text'    => __( 'Próxima »' ),
 			'add_args'     => false,
 			'add_fragment' => ''
 		]
 	);
 	if ( is_array( $pages ) ) {
 		//$paged = ( get_query_var( 'paged' ) == 0 ) ? 1 : get_query_var( 'paged' );
-		$pagination = '<div class="pagination"><ul class="pagination">';
+		$pagination = '<div class="pagination justify-content-center"><ul class="pagination">';
 		foreach ($pages as $page) {
                         $pagination .= '<li class="page-item' . (strpos($page, 'current') !== false ? ' active' : '') . '"> ' . str_replace('page-numbers', 'page-link', $page) . '</li>';
                 }

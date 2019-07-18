@@ -14,14 +14,14 @@
 <body <?php body_class(); ?>>
     <header>
          <!-- Collect the nav links, forms, and other content for toggling -->
-         <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+         <nav class="navbar navbar-expand-md navbar-dark bg-custom" role="navigation">
            <div class="container">
            	<!-- Brand and toggle get grouped for better mobile display -->
            	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
            		<span class="navbar-toggler-icon"></span>
            	</button>
-           	<a class="navbar-brand" href="#">Navbar</a>
-            <a href="#"></a>Olá amigos, sou header.php.
+           	<a class="navbar-brand" href="#">Menu</a>
+            <b>Olá amigos, sou header.php.</b>
            		<?php
            		wp_nav_menu( array(
            			'theme_location'    => 'primary',

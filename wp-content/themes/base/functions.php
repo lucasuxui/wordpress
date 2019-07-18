@@ -22,7 +22,7 @@ if (!defined('WP_IMAGES')) {
 
 
 //Auto Load app
-$directories = array('template-parts','app/config', 'app/widgets', 'app/poststypes');
+$directories = array('app/config', 'app/widgets', 'app/poststypes');
 $types = array( 'php' );
 
 foreach ($directories as $directory){
