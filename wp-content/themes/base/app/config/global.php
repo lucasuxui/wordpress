@@ -42,7 +42,13 @@ add_action('after_setup_theme', 'theme_functions');
 
 if( function_exists('acf_add_options_page') ) {
 
-	acf_add_options_page();
+    $page = acf_add_options_page(array(
+        'page_title' 	=> __('Opções', 'productify'),
+        'menu_title' 	=> __('Opções', 'productify'),
+        'menu_slug' 	=> 'option',
+        'capability' 	=> 'edit_posts',
+        'redirect' 	    => false
+    ));
 
 }
 
