@@ -52,6 +52,17 @@ if( function_exists('acf_add_options_page') ) {
 
 }
 
+function custom_login_logo() {
+		?>
+		<style type="text/css">
+		body.login div#login h1 a {
+		background-image: url("<?php echo WP_IMAGES ?>/logo.png"); //Add the URL of your custom logo between the single quotes
+		padding-bottom: 30px;
+		}
+		</style>
+		<?php
+} add_action( 'login_enqueue_scripts', 'custom_login_logo' );
+
 function widgets_init()
 {
     register_sidebar(array(
