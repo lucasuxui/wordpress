@@ -28,6 +28,7 @@ var phpWatchFiles = root + '**/*.php',
 
 var jsSRC = [
     js + 'jquery.js',
+    js + 'bootstrap.min.js',
     js + 'main.js',
 ];
 
