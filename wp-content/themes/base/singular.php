@@ -7,17 +7,19 @@
   // echo $post_type;
   ?>
 
-  <?php while (have_posts()) : the_post();  ?>
+  <?php if(have_posts()) : ?>
       <div class="bread-box">
         <div class="container">
           <?php wp_breadcrumbs(); ?>
         </div>
       </div>
-      <?php if(is_page($slug)) : ?>
-          <?php get_template_part("template-parts/component", $slug)?>
-      <?php elseif (is_singular($post_type)) : ?>
-          <?php get_template_part("template-parts/component", 'single-'.$post_type )?>
-      <?php endif; ?>
+      <?php while (have_posts()) : the_post(); ?>
+        <?php if(is_page($slug)) : ?>
+            <?php get_template_part("template-parts/component", $slug)?>
+        <?php elseif (is_singular($post_type)) : ?>
+            <?php get_template_part("template-parts/component", 'single-'.$post_type )?>
+        <?php endif; ?>
   <?php endwhile; ?>
+<?php endif; ?>
 
 <?php get_footer();?>

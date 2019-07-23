@@ -1,0 +1,11 @@
+// Page Testes
+.item-box{
+    height: 100%;
+    .card{
+        &-img-top{           
+            object-fit: cover;
+            max-height: 200px;
+        }
+    }
+}
+// End Page Testes

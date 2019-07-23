@@ -14,7 +14,7 @@
   <div class="row">
     <?php $wp_query = new WP_Query($args); ?>
     <?php if($wp_query->have_posts()): while($wp_query->have_posts()): $wp_query->the_post(); ?>
-      <div class="col-md-4 mb-4">
+      <div class="col-md-4 mb-4 item-box">
         <div class="card">
             <?php !empty(the_post_thumbnail('post-thumbnail', ['class' => 'card-img-top img-fluid responsive--full'])) ?
             the_post_thumbnail('post-thumbnail', ['class' => 'card-img-top img-fluid responsive--full']) : 'nope';?>
@@ -28,7 +28,7 @@
         </div>
       </div>
     <?php endwhile; endif;?>
-    <div class="col-md-12">
+    <div class="pagination col-md-12">
       <nav class="paginate-nav">
           <?php bootstrap_pagination(); ?>
       </nav>

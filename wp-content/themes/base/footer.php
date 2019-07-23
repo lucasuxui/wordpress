@@ -1,5 +1,5 @@
     <!-- Footer -->
-    <footer class="page-footer font-small blue pt-4">
+    <footer class="page-footer py-4">
 
       <!-- Footer Links -->
       <div class="container text-center text-md-left">
@@ -74,7 +74,7 @@
       <!-- Footer Links -->
 
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© <?php echo date("Y"); ?> Copyright:
+      <div class="footer-copyright text-center">© <?php echo date("Y"); ?> Copyright:
         <a href="https://www.instagram.com/lucasyem/"> lucasyem</a>
       </div>
       <!-- Copyright -->
