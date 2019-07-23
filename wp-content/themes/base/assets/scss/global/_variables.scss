@@ -1,8 +1,15 @@
 $primary:#333333;
-$secondaryColor:#1f1f1f;
+$secondary:#1f1f1f;
 $gray: #efefef;
 $white: #ffffff;
-$primaryLight: #524f4f;
+// Primary Color Effects
+$primaryDark: darken( $primary, 10% );
+$primaryLight: lighten( $primary, 10% );
+$primaryOpacity: rgba( $primary, .7 );
+// Secondary Color Effects
+$secondaryDark: darken( $secondary, 10% );
+$secondaryLight: lighten( $secondary, 10% );
+$secondaryOpacity: rgba( $secondary, .7 );
 
 // Fontes
 $ft1:'open-sans-v15-latin-regular';

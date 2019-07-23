@@ -6,6 +6,12 @@
             object-fit: cover;
             max-height: 200px;
         }
+        &-title,&-text{
+            font-weight: lighter;
+        }
+        &-text{
+            color: $primaryLight;            
+        }
     }
 }
 // End Page Testes
