@@ -20,7 +20,16 @@
            	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
            		<span class="navbar-toggler-icon"></span>
            	</button>
-           	<a class="navbar-brand" href="#">Menu</a>
+			<?php $logo = get_field('logo', 'option');?>
+			<?php if($logo):?>
+					<a href="<?php WP_HOME; ?>" class="navbar-brand logo">
+						<?php
+							echo '<img src="' . $logo['url'] . '" width="' . $logo['width'] . '" height="' . $logo['height'] . '" title="' . get_bloginfo('title') . ' - ' . get_bloginfo('description') . '" alt="' . get_bloginfo('title') . '" />';
+						?>
+					</a>
+			   <?php else: ?>
+			   	<a href="<?php WP_HOME; ?>" class="navbar-brand"><?= bloginfo('name')?></a>
+			<?php endif;?>
             <b>Olá amigos, sou header.php.</b>
            		<?php
            		wp_nav_menu( array(

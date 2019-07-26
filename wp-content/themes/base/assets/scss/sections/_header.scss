@@ -1,1 +1,11 @@
-
+// Navbar
+nav{
+    .bg-custom{
+        background-color: $white;
+        font-family: $ft2;
+    }
+    .logo img{
+        max-width: 100px;
+        height: auto;
+    }
+}
