@@ -22,15 +22,14 @@
            	</button>
 			<?php $logo = get_field('logo', 'option');?>
 			<?php if($logo):?>
-					<a href="<?php WP_HOME; ?>" class="navbar-brand logo">
+					<a href="<?= WP_HOME ?>" class="navbar-brand logo">
 						<?php
 							echo '<img src="' . $logo['url'] . '" width="' . $logo['width'] . '" height="' . $logo['height'] . '" title="' . get_bloginfo('title') . ' - ' . get_bloginfo('description') . '" alt="' . get_bloginfo('title') . '" />';
 						?>
 					</a>
 			   <?php else: ?>
-			   	<a href="<?php WP_HOME; ?>" class="navbar-brand"><?= bloginfo('name')?></a>
+			   	<a href="<?= WP_HOME ?>" class="navbar-brand"><?= bloginfo('name')?></a>
 			<?php endif;?>
-            <b>Olá amigos, sou header.php.</b>
            		<?php
            		wp_nav_menu( array(
            			'theme_location'    => 'primary',

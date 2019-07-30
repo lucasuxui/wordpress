@@ -37,7 +37,7 @@ class Base extends WP_Widget
 
         ?>
         <!-- Widget -->
-        <section class="template">
+        <section id="template" class="template">
           <div class="alert alert-success" role="alert">
             Aqui está seu <b>widget</b>!
             <i class="fab fa-font-awesome"></i>

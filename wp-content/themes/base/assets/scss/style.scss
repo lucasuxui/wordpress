@@ -37,7 +37,7 @@
 // GLOBAL
 // **
 @import "global/animate";
-@import "global/variables";
+@import "global/vars";
 @import "global/fonts";
 // **
 // MODULES
@@ -52,6 +52,7 @@
 // **
 // TEMPLATE
 // **
+@import "template/body";
 @import "template/breadcrumbs";
 @import "template/menu";
 @import "template/pagination";

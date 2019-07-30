@@ -1,18 +1,18 @@
-.bread-box{
+.bread-box {
   background-color: $primaryLight;
-  #breadcrumbs{
+  #breadcrumbs {
     display: flex;
     flex-flow: row;
     color: $white;
     list-style-type: none;
     padding: 10px 0;
-    li{
+    li {
       margin: 0 5px;
     }
-    li:first-child{
+    li:first-child {
       margin-left: 0;
     }
-    li:last-child{
+    li:last-child {
       margin-right: 0;
     }
   }
