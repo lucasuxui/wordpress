@@ -57,7 +57,10 @@ function custom_login_logo() {
 		<style type="text/css">
 		body.login div#login h1 a {
 		background-image: url("<?php echo WP_IMAGES ?>/logo.png"); //Add the URL of your custom logo between the single quotes
-		padding-bottom: 30px;
+        padding-bottom: 30px;
+        height: 90px;
+        width: 100%;
+        background-size: contain;
 		}
 		</style>
 		<?php
