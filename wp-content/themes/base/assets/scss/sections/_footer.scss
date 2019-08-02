@@ -45,8 +45,9 @@
     }
   }
   &-logo {
-    display: flex;
+    display: block;
     img {
+      width: 100%;
       max-width: 160px;
       height: auto;
     }

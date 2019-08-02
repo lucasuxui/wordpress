@@ -16,10 +16,7 @@
          <!-- Collect the nav links, forms, and other content for toggling -->
          <nav class="navbar navbar-expand-md navbar-dark bg-custom" role="navigation">
            <div class="container">
-           	<!-- Brand and toggle get grouped for better mobile display -->
-           	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-           		<span class="navbar-toggler-icon"></span>
-           	</button>
+			<!-- Brand and toggle get grouped for better mobile display -->
 			<?php $logo = get_field('logo', 'option');?>
 			<?php if($logo):?>
 					<a href="<?= WP_HOME ?>" class="navbar-brand logo">
@@ -30,6 +27,9 @@
 			   <?php else: ?>
 			   	<a href="<?= WP_HOME ?>" class="navbar-brand logo"><?= bloginfo('name')?></a>
 			<?php endif;?>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+           		<span class="navbar-toggler-icon"></span>
+           	</button>
            		<?php
            		wp_nav_menu( array(
            			'theme_location'    => 'primary',

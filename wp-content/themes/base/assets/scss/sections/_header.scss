@@ -5,9 +5,10 @@ nav {
     font-family: $ft2;
   }
   .logo {
-    display: flex;
+    display: block;
     img {
       max-width: 100px;
+      width: 100%;
       height: auto;
     }
   }
