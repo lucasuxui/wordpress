@@ -57,3 +57,18 @@
 @import "template/menu";
 @import "template/pagination";
 @import "template/widgets";
+
+/*
+  Chamar FontAwesome Exemplos
+  @extend %fa-icon; Font-Family
+  @extend .fas; --Solid
+  @extend .fab; --Brand
+  @extend .far; --Regular
+  Exemplo --->
+  &:before {
+    @extend %fa-icon;
+    @extend .fas;
+    content: fa-content($fa-var-user);
+  }
+}
+*/
