@@ -17,9 +17,9 @@
                   ?>
                 </a>
               <?php else: ?>
-                <a href="<?= WP_HOME; ?>" class="navbar-brand"><?= bloginfo('name')?></a>
+                <a href="<?= WP_HOME; ?>" class="navbar-brand logo"><?= bloginfo('name')?></a>
               <?php endif;?>  
-              <?php if(get_sub_field('telefone') && get_sub_field('email')):?>
+              <?php if(get_sub_field('telefone') || get_sub_field('email')):?>
                 <ul class="footer-list my-3">          
                   <?php if(get_sub_field('telefone')) : $var = get_sub_field_object('telefone') ?>
                     <li><?= $var['value']; ?></li>
@@ -113,14 +113,14 @@
           <hr>
           <div class="row">
             <!-- Copyright -->
-            <div class="col-md-6 my-3"> 
+            <div class="col-md-6 mb-3"> 
               <div class="footer-copyright">© <?php echo date("Y"); ?>
                 <a href="http://tutanodigital.com.br/">Tutano Digital</a> - Todos os direitos reservados
               </div>
             </div>
             <!-- Copyright -->
             <?php if(have_rows('redes-sociais')):?>
-              <div class="col-md-6 my-3">
+              <div class="col-md-6 mb-3">
                 <ul class="social-media float-md-right">
                 <?php while(have_rows('redes-sociais')): the_row();?>
                   <?php if(get_sub_field('icone')) : $var = get_sub_field('icone'); ?>
@@ -133,8 +133,8 @@
           </div>
       </div>
       <!-- Footer Links -->
-      <a href="#" id="scroll" style="display: none;"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
       <?php endif;?>
+      <a href="#" id="scroll" style="display: none;"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
     </footer>
     <!-- Footer -->
     

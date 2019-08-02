@@ -4,8 +4,11 @@ nav {
     background-color: $primary;
     font-family: $ft2;
   }
-  .logo img {
-    max-width: 100px;
-    height: auto;
+  .logo {
+    display: flex;
+    img {
+      max-width: 100px;
+      height: auto;
+    }
   }
 }

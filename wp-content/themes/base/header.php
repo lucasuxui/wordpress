@@ -28,7 +28,7 @@
 						?>
 					</a>
 			   <?php else: ?>
-			   	<a href="<?= WP_HOME ?>" class="navbar-brand"><?= bloginfo('name')?></a>
+			   	<a href="<?= WP_HOME ?>" class="navbar-brand logo"><?= bloginfo('name')?></a>
 			<?php endif;?>
            		<?php
            		wp_nav_menu( array(
