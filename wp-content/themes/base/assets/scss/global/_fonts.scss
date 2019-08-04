@@ -5,17 +5,190 @@
 */
 
 $ft-dir       : '../fonts/';
-$ft-family    : $ft1, $ft2;
-$ft-archive   : $fta1, $fta2;
+$ft-family    : $ft1, $ft2, $ft3;
+$ft-archive   : $fta1, $fta2, $fta3;
 
 $fonts        : zip($ft-family, $ft-archive);
 
 @each $f in $fonts{
     @font-face {
         font-family: '#{nth($f, 1)}'; 
-        src: url('#{$ft-dir}#{nth($f, 2)}.eot'); 
-        src: url('#{$ft-dir}#{nth($f, 2)}.eot?#iefix') format('embedded-opentype'), 
-             url('#{$ft-dir}#{nth($f, 2)}.woff') format('woff'), 
-             url('#{$ft-dir}#{nth($f, 2)}.ttf') format('truetype');
+        font-style: normal;
+        font-weight: 100;
+        src: url('#{$ft-dir}#{nth($f, 2)}-100.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-100.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-100.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-100.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-100.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: italic;
+        font-weight: 100;
+        src: url('#{$ft-dir}#{nth($f, 2)}-100italic.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-100italic.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-100italic.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-100italic.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-100italic.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: normal;
+        font-weight: 200;
+        src: url('#{$ft-dir}#{nth($f, 2)}-200.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-200.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-200.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-200.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-200.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: italic;
+        font-weight: 200;
+        src: url('#{$ft-dir}#{nth($f, 2)}-200italic.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-200italic.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-200italic.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-200italic.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-200italic.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: normal;
+        font-weight: 300;
+        src: url('#{$ft-dir}#{nth($f, 2)}-300.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-300.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-300.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-300.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-300.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: italic;
+        font-weight: 300;
+        src: url('#{$ft-dir}#{nth($f, 2)}-300italic.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-300italic.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-300italic.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-300italic.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-300italic.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: italic;
+        font-weight: 400;
+        src: url('#{$ft-dir}#{nth($f, 2)}-italic.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-italic.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-italic.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-italic.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-italic.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: normal;
+        font-weight: 400;
+        src: url('#{$ft-dir}#{nth($f, 2)}-regular.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-regular.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-regular.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-regular.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-regular.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: normal;
+        font-weight: 500;
+        src: url('#{$ft-dir}#{nth($f, 2)}-500.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-500.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-500.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-500.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-500.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: italic;
+        font-weight: 500;
+        src: url('#{$ft-dir}#{nth($f, 2)}-500italic.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-500italic.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-500italic.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-500italic.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-500italic.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: normal;
+        font-weight: 600;
+        src: url('#{$ft-dir}#{nth($f, 2)}-600.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-600.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-600.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-600.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-600.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: italic;
+        font-weight: 600;
+        src: url('#{$ft-dir}#{nth($f, 2)}-600italic.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-600italic.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-600italic.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-600italic.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-600italic.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: normal;
+        font-weight: 700;
+        src: url('#{$ft-dir}#{nth($f, 2)}-700.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-700.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-700.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-700.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-700.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: italic;
+        font-weight: 700;
+        src: url('#{$ft-dir}#{nth($f, 2)}-700italic.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-700italic.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-700italic.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-700italic.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-700italic.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: italic;
+        font-weight: 800;
+        src: url('#{$ft-dir}#{nth($f, 2)}-800italic.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-800italic.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-800italic.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-800italic.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-800italic.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: normal;
+        font-weight: 800;
+        src: url('#{$ft-dir}#{nth($f, 2)}-800.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-800.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-800.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-800.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-800.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: normal;
+        font-weight: 900;
+        src: url('#{$ft-dir}#{nth($f, 2)}-900.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-900.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-900.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-900.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-900.svg#{nth($f, 1)}') format('svg');
+    }
+    @font-face {
+        font-family: '#{nth($f, 1)}'; 
+        font-style: italic;
+        font-weight: 900;
+        src: url('#{$ft-dir}#{nth($f, 2)}-900italic.eot'); 
+        src: url('#{$ft-dir}#{nth($f, 2)}-900italic.eot?#iefix') format('embedded-opentype'), 
+             url('#{$ft-dir}#{nth($f, 2)}-900italic.woff') format('woff'), 
+             url('#{$ft-dir}#{nth($f, 2)}-900italic.ttf') format('truetype'),
+             url('#{$ft-dir}#{nth($f, 2)}-900italic.svg#{nth($f, 1)}') format('svg');
     }
 }
