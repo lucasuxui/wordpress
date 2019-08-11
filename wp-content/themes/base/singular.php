@@ -13,8 +13,10 @@
           <?php wp_breadcrumbs(); ?>
         </div>
       </div>
-      <?php while (have_posts()) : the_post(); ?>
-        <?php if(is_page($slug)) : ?>
+      <?php while (have_posts()) : the_post(); ?>            
+        <?php if(is_singular('teste')) : //Single com banner ?>
+            <?php get_template_part("template-parts/component", 'single-teste')?>
+        <?php elseif(is_page($slug)) : ?>
             <?php get_template_part("template-parts/component", $slug)?>
         <?php elseif (is_singular($post_type)) : ?>
             <?php get_template_part("template-parts/component", 'single-'.$post_type )?>

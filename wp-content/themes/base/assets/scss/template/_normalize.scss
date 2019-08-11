@@ -1,0 +1,13 @@
+:root{
+  --primary:#{$primary};
+  --secondary:#{$secondary};
+}
+
+html{
+  height: 100%;
+}
+body {
+  font-family: $ft1;
+  height: 100%;  
+}
+
