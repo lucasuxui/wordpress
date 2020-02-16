@@ -22,7 +22,7 @@ function theme_functions()
      * Menus
      */
 		 register_nav_menus( array(
-		 	'primary' => __( 'Menu da Template', 'Base' ),
+		 	'primary' => __( 'Menu do Topo', 'Base' ),
 		 ) );
 
     /**

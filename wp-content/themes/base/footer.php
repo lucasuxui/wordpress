@@ -115,7 +115,7 @@
             <!-- Copyright -->
             <div class="col-md-6 mb-3"> 
               <div class="footer-copyright">© <?php echo date("Y"); ?>
-                <a href="http://tutanodigital.com.br/">Tutano Digital</a> - Todos os direitos reservados
+                <a href="mailto:lucasuxui@outlook.com">Lucas Souza</a> - Todos os direitos reservados
               </div>
             </div>
             <!-- Copyright -->
