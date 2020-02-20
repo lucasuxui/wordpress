@@ -8,22 +8,24 @@ Iremos usar SCSS, JS e PHP basicamente.
 
 ### Clone
 
-Clone primeiramente o projeto.
+Baixe primeiramente o projeto.
 
 Com HTTPS:
 ```
-https://gitlab.com/lucasyem/wordpress-template.git
+https://github.com/lucasuxui/wordpress.git
 ```
 Ou Com SSH:
 ```
-git@gitlab.com:lucasyem/wordpress-template.git
+git@github.com:lucasuxui/wordpress.git
 ```
 
 ### Obs
 
-Apague o .git de sua pasta raiz do wp, pois agora você iniciará seus projetos nessa template.
+Apague o .git de sua pasta raiz do WordPress, pois agora você iniciará seus projetos nesse tema.
 
 ### Installing
+
+Instale o [Node.js](https://nodejs.org/)
 
 Com o Node.js instale os requisitos para o compilamento futuro.(Na pasta dos temas do WordPress "**TEMA**/gulp/")
 
@@ -47,13 +49,13 @@ E finalmente você estará compilando seu scss,js,imagens e fontes ao vivo.
 ### Banco de Dados
 
 Crie um banco de dados para seu projeto.
-ATENÇÃO! No arquivo wp-config.php (Na raiz do projeto), tem um nome padrão já definido da db,"wordpress".Se quiser mudar isto você tem que alterar este arquivo.
+ATENÇÃO! No arquivo wp-config.php (Na raiz do projeto), tem um nome padrão já definido do banco de dados,"wordpress".Se quiser mudar isto você tem que alterar este arquivo.
 
 ### Wordpress
     Execute no localhost o projeto e instale o wordpress. Após a instalação, escolha o tema da template no wordpress.
 ### Directory
 
-Entre na pasta do nosso tema "base".
+Entre na pasta do nosso tema.
 Obs: Pode renomear se quiser.
 
 ## Devenvolva!
@@ -68,9 +70,9 @@ Seja feliz e curta esta template.
 
 ## Authors
 
-* **Lucas Oliveira** - *Project's* - [Lucasyem](https://gitlab.com/lucasyem)
+* **Lucas Oliveira** - *Project's* - [lucasuxui](https://github.com/lucasuxui)
 
-Veja as últimas atualizações [contributors](https://gitlab.com/lucasyem/wordpress-template/activity).
+Veja as últimas atualizações [contributors](https://github.com/lucasuxui/wordpress/graphs/contributors).
 
 ## License
 
