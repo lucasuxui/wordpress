@@ -1,5 +1,4 @@
 // Gulp.js configuration
-var themename = "base";
 
 var // Gulp and plugins
   gulp          = require("gulp"),
