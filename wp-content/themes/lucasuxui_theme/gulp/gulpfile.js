@@ -78,7 +78,7 @@ function fonts() {
 function watch() {
   browserSync.init({
     open: "external",
-    proxy: "http://localhost/wordpress-template"
+    proxy: "http://localhost/wordpress"
   });
   gulp.watch(styleWatchFiles, css);
   gulp.watch(jsSRC, javascript);
